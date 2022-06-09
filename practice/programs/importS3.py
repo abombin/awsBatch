@@ -17,12 +17,6 @@ def bucketList():
 
 #print(os.getcwd())
 
-
-#df.to_csv(
-#    "s3://abombin/metaDat.csv",
-#    index=False,
-#)
-
 # read data from s3
 bucket = 'abombin' 
 obj = s3.get_object(Bucket= bucket, Key= 'df.csv') 
